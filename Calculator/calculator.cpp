@@ -85,7 +85,7 @@ void Calculator::performAction(QChar symbol)
             x *= rvalue.toDouble();
             break;
         case '/':
-            if (x == 0 || x == 0.0) { //try chatchov brnel
+            if (x == 0) {
                 QMessageBox::critical(this, "title", "can not be divided into zero!");
                 lvalue.clear();
                 previousSign = '!';
