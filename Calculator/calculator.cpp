@@ -8,7 +8,9 @@ Calculator::Calculator(QWidget *parent)
     , ui(new Ui::Calculator)
 {
     ui->setupUi(this);
-    this->resize(239, 290);
+    this->setFixedSize(239, 290);
+    ui->centralwidget->setMaximumHeight(290);
+    ui->centralwidget->setMaximumWidth(239);
     ui->pushButton_g->setStyleSheet("QPushButton { background-color: orange; color : white }");
     ui->pushButton_h->setStyleSheet("QPushButton { background-color: orange; color : white }");
     ui->pushButton_b->setStyleSheet("QPushButton { background-color: orange; color : white }");
